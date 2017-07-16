@@ -36,6 +36,25 @@
     (global-set-key (kbd "s-W") 'delete-frame)
     (global-set-key (kbd "s-n") 'make-frame)
     (global-set-key (kbd "s-z") 'undo-tree-undo)
+
+    ;; Moving in text like all other mac apps
+    (global-set-key (kbd "s-<left>") 'beginning-of-line)
+    (global-set-key (kbd "s-<right>") 'end-of-line)
+    (global-set-key (kbd "s-<up>") 'beginning-of-buffer)
+    (global-set-key (kbd "s-<down>") 'end-of-buffer)
+
+    ;; (global-set-key (kbd "S-s-<left>") 'mark-to-end-of-line)
+    ;; (global-set-key (kbd "S-s-<right>") 'mark-to-beginning-of-line)
+    ;; (global-set-key (kbd "S-s-<up>") ')
+    ;; (global-set-key (kbd "S-s-<down>") ')
+
+    ;; Duplicating text as in sublime, atom, etc...
+    (global-set-key (kbd "S-s-d") 'spacemacs/duplicate-line-or-region)
+
+    ;; Move in between frames as in web explorer 'alt cmd <left/right>'
+    (global-set-key (kbd "M-s-<right>") 'ns-next-frame)
+    (global-set-key (kbd "M-s-<left") 'ns-prev-frame)
+
     (global-set-key (kbd "s-s")
                     (lambda ()
                       (interactive)
