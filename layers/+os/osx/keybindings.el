@@ -45,15 +45,16 @@
 
     ;; (global-set-key (kbd "S-s-<left>") 'mark-to-end-of-line)
     ;; (global-set-key (kbd "S-s-<right>") 'mark-to-beginning-of-line)
-    ;; (global-set-key (kbd "S-s-<up>") ')
-    ;; (global-set-key (kbd "S-s-<down>") ')
+    ;; (global-set-key (kbd "S-s-<up>") 'mark-to-beginning-of-buffer)
+    ;; (global-set-key (kbd "S-s-<down>") 'mark-to-end-of-buffer)
+    ;; (global-set-key (kbd "s-<backspace>") 'errase-to-beginning-of-line)
 
     ;; Duplicating text as in sublime, atom, etc...
-    (global-set-key (kbd "S-s-d") 'spacemacs/duplicate-line-or-region)
+    (global-set-key (kbd "s-D") 'spacemacs/duplicate-line-or-region)
 
     ;; Move in between frames as in web explorer 'alt cmd <left/right>'
-    (global-set-key (kbd "M-s-<right>") 'ns-next-frame)
-    (global-set-key (kbd "M-s-<left") 'ns-prev-frame)
+    (global-set-key (kbd "M-s-<right>") 'next-buffer)
+    (global-set-key (kbd "M-s-<left>") 'previous-buffer)
 
     (global-set-key (kbd "s-s")
                     (lambda ()
